@@ -1,0 +1,5 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+local_simulation/data
+create_user_input_file/userInputFile.txt
+code_to_upload/master/MasterExecutorLib.dll
+code_to_upload/site/SiteExecutorLib.dll

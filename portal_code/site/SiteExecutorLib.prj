@@ -1,0 +1,170 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2250690870" file="C:\tmp\dl_code_remake\portal_code\site\SiteExecutorLib.prj" location="C:\tmp\dl_code_remake\portal_code\site" name="SiteExecutorLib" preferred-package-location="C:\tmp\dl_code_remake\portal_code\site\SiteExecutorLib\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.library" target-name="Library Compiler">
+    <param.appname>SiteExecutorLib</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Johan van Soest</param.authnamewatermark>
+    <param.email>johan.vansoest@maastro.nl</param.email>
+    <param.company>MAASTRO Clinic</param.company>
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\MAASTRO Clinic\SiteExecutorLib\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\SiteExecutorLib\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\SiteExecutorLib\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\SiteExecutorLib\for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.net.component</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+    </param.required.mcr.products>
+    <param.namespace />
+    <param.classorg />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.user.only.registration>false</param.user.only.registration>
+    <param.net.framework>option.net.framework.4.0</param.net.framework>
+    <param.assembly.type>false</param.assembly.type>
+    <param.encryption.key.file />
+    <param.net.enable.remoting>false</param.net.enable.remoting>
+    <param.net.tsa.enable>false</param.net.tsa.enable>
+    <param.net.tsa.assembly />
+    <param.net.tsa.interface />
+    <param.net.tsa.namespace />
+    <param.net.tsa.superclass>SiteRunner</param.net.tsa.superclass>
+    <param.net.tsa.metadata />
+    <param.net.tsa.metadata.assembly>C:\tmp\dl_code_remake\code_to_upload</param.net.tsa.metadata.assembly>
+    <param.net.saved.interface />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.support.packages />
+      <param.namespace />
+      <param.classorg />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.user.only.registration />
+      <param.assembly.type />
+      <param.encryption.key.file />
+      <param.net.enable.remoting />
+      <param.net.tsa.enable />
+      <param.net.tsa.assembly />
+      <param.net.tsa.interface />
+      <param.net.tsa.namespace />
+      <param.net.tsa.superclass />
+      <param.net.tsa.metadata />
+      <param.net.tsa.metadata.assembly />
+      <param.net.saved.interface />
+    </unset>
+    <fileset.exports>
+      <file>${PROJECT_ROOT}\mainSite.m</file>
+    </fileset.exports>
+    <fileset.classes>
+      <entity.package name="">
+        <entity.class name="SiteRunner">
+          <file>${PROJECT_ROOT}\mainSite.m</file>
+        </entity.class>
+      </entity.package>
+    </fileset.classes>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\computeSummaryStats.m</file>
+      <file>${PROJECT_ROOT}\computeSvmScore.m</file>
+      <file>${PROJECT_ROOT}\createBinaryVariablesGivenRange.m</file>
+      <file>${PROJECT_ROOT}\createFeatureAndOutcomeVariables.m</file>
+      <file>${PROJECT_ROOT}\escapeString.m</file>
+      <file>${PROJECT_ROOT}\formatFunctionInput.m</file>
+      <file>${PROJECT_ROOT}\getData.m</file>
+      <file>${PROJECT_ROOT}\http_createHeader.m</file>
+      <file>${PROJECT_ROOT}\jsonopt.m</file>
+      <file>${PROJECT_ROOT}\loadjson.m</file>
+      <file>${PROJECT_ROOT}\loadubjson.m</file>
+      <file>${PROJECT_ROOT}\mainSite.m</file>
+      <file>${PROJECT_ROOT}\mergestruct.m</file>
+      <file>${PROJECT_ROOT}\modeAndMeanImputation.m</file>
+      <file>${PROJECT_ROOT}\parseJsonQueryResults.m</file>
+      <file>${PROJECT_ROOT}\parseLiteral.m</file>
+      <file>${PROJECT_ROOT}\readSiteInput.m</file>
+      <file>${PROJECT_ROOT}\reorderData.m</file>
+      <file>${PROJECT_ROOT}\rescaleData.m</file>
+      <file>${PROJECT_ROOT}\savejson.m</file>
+      <file>${PROJECT_ROOT}\saveubjson.m</file>
+      <file>${PROJECT_ROOT}\sparql_vlp.m</file>
+      <file>${PROJECT_ROOT}\stageDataReading.m</file>
+      <file>${PROJECT_ROOT}\stageEvaluation.m</file>
+      <file>${PROJECT_ROOT}\stageLearning.m</file>
+      <file>${PROJECT_ROOT}\struct2jdata.m</file>
+      <file>${PROJECT_ROOT}\updateX.m</file>
+      <file>${PROJECT_ROOT}\urlread2.m</file>
+      <file>${PROJECT_ROOT}\varargin2struct.m</file>
+      <file>${PROJECT_ROOT}\writeSiteOutput.m</file>
+      <file>${PROJECT_ROOT}\writeToLog.m</file>
+    </fileset.resources>
+    <fileset.depfun />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\SiteExecutorLib\for_testing" name="SiteExecutorLib_overview.html" optional="false">C:\tmp\dl_code_remake\portal_code\site\SiteExecutorLib\for_testing\SiteExecutorLib_overview.html</file>
+      <file location="${PROJECT_ROOT}\SiteExecutorLib\for_testing" name="readme.txt" optional="true">C:\tmp\dl_code_remake\portal_code\site\SiteExecutorLib\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\SiteExecutorLib\for_testing" name="SiteExecutorLibNative.dll" optional="false">C:\tmp\dl_code_remake\portal_code\site\SiteExecutorLib\for_testing\SiteExecutorLibNative.dll</file>
+      <file location="${PROJECT_ROOT}\SiteExecutorLib\for_testing" name="SiteExecutorLib.dll" optional="false">C:\tmp\dl_code_remake\portal_code\site\SiteExecutorLib\for_testing\SiteExecutorLib.dll</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2015b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
