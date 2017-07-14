@@ -9,7 +9,7 @@ This code uses the jsonlab package by Qianqian Fang available [here](https://git
 
 * Do **not** use Matlab 2017 or later, current dependencies (jsonlab) do not support this version
 * An active Matlab license
-* An active Matlab compiler license (for running in the [Varian Learning Portal](http://www.varianlearningportal.com))
+* An active Matlab compiler license (for running in the [Varian Learning Portal](https://www.varianlearningportal.com/VarianLearningPortal/))
 
 ## Repository layout
 This repository is split into four main folders:
