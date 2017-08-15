@@ -24,7 +24,7 @@ For this, you first need to download a .csv with example data from https://www.c
 The distributed learning code expects a text file with user-specified settings. This file can be generated using script_createUserInputFile.m in the folder create_user_input_file. The existing settings in script_createUserInputFile.m allows to run a local simulation.
 You can then start the simulation with script_initialize_simulation.m.
 This local simulation can later be used to test changes in the code. We advise to first debug code in this environment before running it on the portal.
-To compile, zip, and sign the distributed learning code before uploading it to the Varian Learning Portal, use script_compile_zip_sign.m in the folder code_to_upload. This requires a Matlab compiler license and the Varian File Signer.
+To compile and sign the distributed learning code before uploading it to the Varian Learning Portal, use script_compile_and_sign.m in the folder code_to_upload. This requires a Matlab compiler license and the Varian File Signer.
 
 ## Compiling for use on the Varian Learning Portal
 
