@@ -79,7 +79,7 @@ for ii = 1:maxIter
         copyfile(masterOutputPathCell{siteLoop},siteInputPathCell{siteLoop}); % copy files from master to site
         display(['Run code on site ' num2str(siteLoop)]);
         cd(sitePathCell{siteLoop}); % change current directory to site simulation location
-        mainSite(siteInputPathCell{siteLoop},siteOutputPathCell{siteLoop},num2str(ii),sitePathCell{siteLoop},siteLogFilePathCell{siteLoop},sparqlToken,sparqlProxy);
+        mainSite(num2str(runId),num2str(ii),siteInputPathCell{siteLoop},siteOutputPathCell{siteLoop},sitePathCell{siteLoop},siteLogFilePathCell{siteLoop},sparqlProxy,sparqlToken);
         % call site algo corresponding to site 'siteLoop'
         copyfile(siteOutputPathCell{siteLoop},masterInputPathCell{siteLoop}); % copy files from site to master
     end
