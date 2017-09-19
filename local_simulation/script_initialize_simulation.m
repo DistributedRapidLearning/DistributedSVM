@@ -11,6 +11,7 @@ runId = 1; % this is only important on the portal - here runId has no specific m
 siteIds = [28 38 78 234 846]; % list the site ids that are involved in the simulation. Ids need to be numeric and listed in a vector.
 sparqlToken = '';
 sparqlProxy = '';
+dataProxyType = '';
 
 %% autocomplete paths
 codePath = fullfile(repositoryPath,'portal_code'); % the path to the folder where master and site code folders with code are located. 
@@ -44,4 +45,4 @@ userInputFilePath = fullfile(repositoryPath,'create_user_input_file','userInputF
 % The result file (if generated) will be copied to the folder resultPath at the end of the
 % simulation.
 
-localSimulation(maxIter,runId,siteIds,sparqlToken,sparqlProxy,codePath,dataPath,userInputFilePath,simulationLocationPath,resultPath);
+localSimulation(maxIter,runId,siteIds,sparqlToken,sparqlProxy,dataProxyType,codePath,dataPath,userInputFilePath,simulationLocationPath,resultPath);
