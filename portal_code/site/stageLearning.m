@@ -1,5 +1,5 @@
 function [sites] = stageLearning(functionInput,sites,state,instance)
-% This stage imputes, dummy codes, rescales the data on all sites 
+% This stage imputes, rescales, dummy codes the data on all sites
 % and applies the x update on training sites.
 
 % load data
@@ -15,10 +15,10 @@ elseif exist(fullfile(functionInput.pathToTempFolder,'data_noImputation.mat'),'f
     [features_noImputation,outcome] = createFeatureAndOutcomeVariables(dataMatrix_noImputation,dataHeader,instance);
     % imputation
     [features,~] = modeAndMeanImputation(features_noImputation,instance.imputationType,[]);
-    %dummy coding
-    [features,dataHeader] = createBinaryVariablesGivenRange(features,~cellfun(@isempty,instance.categoricalFeatureRange),instance.featureNames,instance.categoricalFeatureRange);
     % rescaling
     [features] = rescaleData(instance,features);
+    %dummy coding
+    [features,dataHeader] = createBinaryVariablesGivenRange(features,~cellfun(@isempty,instance.categoricalFeatureRange),instance.featureNames,instance.categoricalFeatureRange);
     % save data
     save(fullfile(functionInput.pathToTempFolder,'data.mat'),'outcome','features','dataHeader')
 else
