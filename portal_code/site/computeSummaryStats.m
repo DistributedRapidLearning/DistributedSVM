@@ -20,4 +20,6 @@ sites.std = nanstd(dataMatrix_noImputation,0,1); %standard deviation per column
 sites.count = sum(~isnan(dataMatrix_noImputation),1); %number of available values per column
 sites.missing = sum(isnan(dataMatrix_noImputation),1); %number of missing values per column
 sites.patientCount = size(dataMatrix_noImputation,1); % number of patients/rows
+sites.quartOne = quantile(dataMatrix_noImputation,0.25); % first quartile per column
+sites.quartThree = quantile(dataMatrix_noImputation,0.75); % third quartile per column
 end
