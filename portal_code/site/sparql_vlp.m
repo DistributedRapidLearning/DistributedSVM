@@ -30,21 +30,5 @@ end
 %open the URL, including the query as a GET-parameter
 [binaryData, extra] = urlread2(endpoint,'POST',requestBody,header);
 
-%remove specific HTML character binaries from binary data
-binaryData = strrep(binaryData, '\u000d','');
-binaryData = strrep(binaryData, '\u000a','');
-
-%if the HTML response is OK (200), parse the xml
-if isempty(strfind(extra.firstHeaders.Response,'200 OK'))==0
-    if (size(findstr(extra.firstHeaders.Content_Type, 'json'),1) > 0)
-        [headValues, tableResult] = parseJsonQueryResults(binaryData, pathToTempFolder);
-    else
-        tableResult = 0;
-        headValues = 0;
-        warning(['Content type of response (' extra.firstHeaders.Content_Type ') not supported. Currently only JSON and XML are supported']);
-    end
-else
-   tableResult = 0; 
-   headValues = 0;
-end
+[headValues, tableResult] = parseJsonQueryResults(binaryData, pathToTempFolder);
 end

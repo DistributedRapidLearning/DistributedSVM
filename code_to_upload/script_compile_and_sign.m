@@ -45,9 +45,8 @@ copyfile(pathToSiteDll,fullfile(pathToUploadFolder,'site','SiteExecutorLib.dll')
 %% delete unused output
 rmdir(pathToMasterPackagingOutput,'s');
 rmdir(pathToSitePackagingOutput,'s');
-%% zip master and site folders as code_to_upload.zip
-zip(fullfile(pathToUploadFolder,'code_to_upload.zip'),{fullfile(pathToUploadFolder,'master') fullfile(pathToUploadFolder,'site')})
+%% sign master and site folder
 % read file signer password
 fileSignerPassword = fileread(pathToFileSignerPassword);
 % sign .zip-file
-dos([pathToFileSigner ' ' fullfile(pathToUploadFolder,'code_to_upload.zip') ' ' fileSignerPassword])
+dos([pathToFileSigner ' ' pathToUploadFolder ' ' fileSignerPassword])
