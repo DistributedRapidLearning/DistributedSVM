@@ -22,7 +22,7 @@ queryAdapted = strrep(queryAdapted, '"', '\"');
 
 requestBody = ['{ "token" : "', proxyToken, '", "endpoint" : "', endpointKey, '", "query" : "', queryAdapted, '" }'];
 if(isempty(proxyToken))
-    requestBody = ['query=' urlencode(query)];
+    requestBody = ['query=' char(java.net.URLEncoder.encode(query, 'UTF-8'))];
 	header(1) = http_createHeader('Accept', 'application/sparql-results+json;charset=UTF-8');
 	header = header(1);
 end
