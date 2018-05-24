@@ -12,7 +12,7 @@ userInputFileName = '..\..\create_user_input_file\UserInputFile.txt';
 masterDir = '.\siteOutput\';
 resultFolder = pwd();
 
-rmdir(masterDir, 's')
+sink = rmdir(masterDir, 's');
 
 %% simulate DL
 Abort = 0;
