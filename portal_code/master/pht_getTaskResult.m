@@ -3,7 +3,7 @@ function pht_getTaskResult( registryLocation, siteId, taskId, itMasterDir )
 %   Detailed explanation goes here
 
     attempts = 100;
-    waitTime = 5;
+    waitTime = 1;
     
     iterationAttempt = 0;
     while iterationAttempt < attempts
