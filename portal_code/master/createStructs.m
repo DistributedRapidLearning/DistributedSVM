@@ -38,6 +38,13 @@ if functionInput.itNumber == 1
     instance.siteIds = functionInput.siteIds;
     instance.trainSites = userInput.trainSitesID;
     instance.testSites = userInput.testSitesID;
+    
+    % record site purpose in instance struct 
+    for i_siteIds = 1:length(functionInput.siteIds)
+    instance.isTrain(i_siteIds) = sites(i_siteIds).isTrain;
+    instance.isTest(i_siteIds) = sites(i_siteIds).isTest;
+    end
+       
     instance.sparqlQuery = userInput.sparqlQuery;
     instance.endpointKey = userInput.endpointKey;
     instance.dataSplitSeed = userInput.dataSplitSeed;

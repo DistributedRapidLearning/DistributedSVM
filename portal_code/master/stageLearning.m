@@ -6,6 +6,8 @@ function [sites,state,instance] = stageLearning(functionInput,sites,state,instan
 % check convergence
 [state] = checkConvergence(sites,state,instance,functionInput);
 
+[instance] = recordAdmmVariables(sites,instance);
+
 % if solution has converged or iteration limit is reached,
 % average x and tell sites to initialize evaluation,
 % otherwise continue learning.
