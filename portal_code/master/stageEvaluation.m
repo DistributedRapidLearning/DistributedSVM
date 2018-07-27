@@ -9,6 +9,7 @@ function [sites,state,instance] = stageEvaluation(functionInput,sites,state,inst
 [instance] = predictOutcome(instance);
 % write output
 writeResult(functionInput,instance)
+plotResult(functionInput,instance)
 % write finalX to log
 writeToLog(['xFinal: ' num2str(instance.xFinal')],functionInput);
 end

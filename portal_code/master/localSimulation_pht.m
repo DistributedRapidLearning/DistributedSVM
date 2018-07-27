@@ -1,5 +1,6 @@
 clear all
 clear all hidden
+addpath('helperfunctions_matlab')
 
 siteIds = [1 2];
 maxIter = 10000; % increase this if you algorithm takes longer. It needs to be at least as large as the value set in the user input file
@@ -64,6 +65,8 @@ if exist(resultFile,'file') == 2
     curTime = strrep(curTime,'-','');
     curTime = strrep(curTime,' ','_');
     copyfile(resultFile,fullfile(resultFolder,['Result' '_' curTime '.txt']));
+    copyfile(fullfile(itMasterDir, 'training.png'),fullfile(resultFolder,['training' '_' curTime '.png']));
+    copyfile(fullfile(itMasterDir, 'testing.png'),fullfile(resultFolder,['testing' '_' curTime '.png']));
 else
     error('Simulation ended without a result file being generated.')
 end
