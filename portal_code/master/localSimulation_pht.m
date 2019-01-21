@@ -1,6 +1,8 @@
 clear all
 clear all hidden
 
+addpath('json')
+
 siteIds = [1 2];
 maxIter = 10000; % increase this if you algorithm takes longer. It needs to be at least as large as the value set in the user input file
 runId = 2; % this is only important on the portal - here runId has no specific meaning
