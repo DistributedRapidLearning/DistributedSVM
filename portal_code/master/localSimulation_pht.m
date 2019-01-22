@@ -7,7 +7,7 @@ addpath('json')
 siteIds = [1 2];
 maxIter = 10000; % increase this if you algorithm takes longer. It needs to be at least as large as the value set in the user input file
 runId = 2; % this is only important on the portal - here runId has no specific meaning
-registryLocation = 'http://localhost:5000';
+registryLocation = 'http://pbdw.personalhealthtrain.net';
 
 %% preparation: create path strings etc.
 numberOfSites = numel(siteIds);
